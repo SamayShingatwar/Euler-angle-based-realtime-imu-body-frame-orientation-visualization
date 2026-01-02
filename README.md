@@ -1,4 +1,4 @@
-# IMU Serial Orientation Visualization (VPython)
+# IMU Serial Orientation Visualization (VPython) (Euler angle–based)
 
 This repository implements a real-time IMU orientation visualization system using serial telemetry from an Arduino-based IMU and 3D body-frame rendering in Python with VPython.
 
@@ -42,3 +42,10 @@ Embedded systems often produce data faster than visualization frameworks can ren
 To prevent time-delayed visualization, this project intentionally discards old serial packets and always renders the most recent orientation estimate.
 
 This approach ensures the visualization reflects the **current orientation** of the IMU rather than historical data.
+
+#FUTURE 
+
+## Future Work
+
+A planned extension of this project is the adoption of a quaternion-based orientation representation to replace Euler angles, enabling gimbal-lock-free rotation handling and improved numerical stability in real-time visualization.
+
